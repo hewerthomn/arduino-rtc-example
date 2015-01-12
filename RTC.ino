@@ -15,7 +15,9 @@ void setup()
   lcd.begin();
   
   startLCD();
-  //startClock();  
+  
+  // run once to setup de clock
+  //setupClock();  
 }
 
 void startLCD()
@@ -24,7 +26,7 @@ void startLCD()
   lcd.clearDisplay();
 }
 
-void startClock()
+void setupClock()
 {
   rtc.writeProtect(false);
   rtc.halt(false);
