@@ -3,6 +3,11 @@
 #include <stdio.h>
 #include <DS1302.h>
 
+// pin 7 - Serial clock out (SCLK)
+// pin 6 - Serial data out (DIN)
+// pin 5 - Data/Command select (D/C)
+// pin 4 - LCD chip select (CS)
+// pin 3 - LCD reset (RST)
 Adafruit_PCD8544 lcd = Adafruit_PCD8544(7, 6, 5, 4, 3);
 
 //        RST,DAT,CLK
